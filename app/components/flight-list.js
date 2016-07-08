@@ -9,15 +9,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var flight_list_service_1 = require('../services/flight-list.service');
+var flight_1 = require('../models/flight');
 var FlightListComponent = (function () {
-    function FlightListComponent() {
+    function FlightListComponent(flightListService) {
+        this.flightListService = flightListService;
+        this.selectedFlight = new flight_1.Flight();
     }
+    FlightListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.flightListService.getFlightsList()
+            .then(function (flightList) {
+            _this.flightList = flightList;
+            _this.selectedFlight = _this.flightList[0];
+        });
+    };
+    FlightListComponent.prototype.onSelected = function (flight) {
+        this.selectedFlight = flight;
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Array)
+    ], FlightListComponent.prototype, "flightList", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], FlightListComponent.prototype, "selectedFlight", void 0);
     FlightListComponent = __decorate([
         core_1.Component({
             selector: 'flight-list',
-            templateUrl: ''
+            templateUrl: 'app/templates/flight-list.html',
+            providers: [flight_list_service_1.FlightsListService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [flight_list_service_1.FlightsListService])
     ], FlightListComponent);
     return FlightListComponent;
 }());
