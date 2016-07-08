@@ -1,0 +1,62 @@
+<div class="row">
+
+    <div class="col-sm-8 border-right">
+        <h2>Flight List goes here..</h2>
+
+        <table class="table table-responsive table-bordered table-hover active">
+            <thead>
+                <tr>
+                    <td>Flight Number</td>
+                    <td>Service Provider</td>
+                    <td>Model/Maker</td>
+                    <td>Destination</td>
+                    <td>Departure Time</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let flight of flightList" (click)="onSelected(flight)">
+                    <td> {{flight.flightNo}} </td>
+                    <td> {{flight.model}} </td>
+                    <td> {{flight.serviceProviderName}} </td>
+                    <td> {{flight.destinationCode}} </td>
+                    <td> {{flight.departureTime}} </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="col-sm-4">
+        <h2>Flight details goes here..</h2>
+
+        <dl class="dl-horizontal">
+            <dt>Flight Number</dt>
+            <dd>{{selectedFlight.flightNo}}</dd>
+
+            <dt>Model/Maker</dt>
+            <dd>{{selectedFlight.model}}</dd>
+
+            <dt>Service Provider</dt>
+            <dd>{{selectedFlight.serviceProviderName}}</dd>
+
+            <dt>Destination Code</dt>
+            <dd>{{selectedFlight.destinationCode}}</dd>
+
+            <dt>Departure time</dt>
+            <dd>{{selectedFlight.departureTime}}</dd>
+
+            <!--<dt>Economy</dt>
+            <dd>{{selectedFlight.ticketFare.economy}}</dd>
+
+            <dt>Business</dt>
+            <dd>{{selectedFlight.ticketFare.business}}</dd>
+
+            <dt>Student</dt>
+            <dd>{{selectedFlight.ticketFare.student}}</dd>-->
+        </dl>
+
+    </div>
+
+</div>
