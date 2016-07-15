@@ -7,12 +7,7 @@ export var FLIGHTS: Flight[] = [
         "serviceProviderName": "Fly Emirates",
         "destinationCode": "DEL",
         "arrivalTime": "2014-06-25T00:00:00.000Z",
-        "departureTime": "2014-06-25T02:10:00.000Z",
-        "ticketFare": {
-            "economy": 2233,
-            "business": 4134,
-            "student": 2767
-        }
+        "departureTime": "2014-06-25T02:10:00.000Z"
     },
     {
         "flightNo": "41131",
@@ -20,12 +15,7 @@ export var FLIGHTS: Flight[] = [
         "serviceProviderName": "Lufthansa",
         "destinationCode": "BLR",
         "arrivalTime": "2014-06-25T00:00:00.000Z",
-        "departureTime": "2014-06-25T02:10:00.000Z",
-        "ticketFare": {
-            "economy": 2998,
-            "business": 5189,
-            "student": 2387
-        }
+        "departureTime": "2014-06-25T02:10:00.000Z"
     },
     {
         "flightNo": "87655",
@@ -33,12 +23,7 @@ export var FLIGHTS: Flight[] = [
         "serviceProviderName": "Lufthansa",
         "destinationCode": "MAX",
         "arrivalTime": "2014-06-25T00:00:00.000Z",
-        "departureTime": "2014-06-25T02:10:00.000Z",
-        "ticketFare": {
-            "economy": 2948,
-            "business": 4268,
-            "student": 2041
-        }
+        "departureTime": "2014-06-25T02:10:00.000Z"
     },
     {
         "flightNo": "67523",
@@ -46,12 +31,7 @@ export var FLIGHTS: Flight[] = [
         "serviceProviderName": "British Airways",
         "destinationCode": "DEL",
         "arrivalTime": "2014-06-25T00:00:00.000Z",
-        "departureTime": "2014-06-25T02:10:00.000Z",
-        "ticketFare": {
-            "economy": 2994,
-            "business": 5744,
-            "student": 2352
-        }
+        "departureTime": "2014-06-25T02:10:00.000Z"
     },
     {
         "flightNo": "12324",
@@ -59,11 +39,6 @@ export var FLIGHTS: Flight[] = [
         "serviceProviderName": "Fly Emirates",
         "destinationCode": "BLR",
         "arrivalTime": "2014-06-25T00:00:00.000Z",
-        "departureTime": "2014-06-25T02:10:00.000Z",
-        "ticketFare": {
-            "economy": 2266,
-            "business": 5662,
-            "student": 2097
-        }
+        "departureTime": "2014-06-25T02:10:00.000Z"
     }
 ]

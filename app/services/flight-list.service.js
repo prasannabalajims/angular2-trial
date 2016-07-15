@@ -16,6 +16,9 @@ var FlightsListService = (function () {
     FlightsListService.prototype.getFlightsList = function () {
         return Promise.resolve(flight_mock_1.FLIGHTS);
     };
+    FlightsListService.prototype.getServiceProvidersList = function () {
+        return Promise.resolve(['British Airways', 'Fly Emirates', 'Lufthansa', 'Cathay Pacific']);
+    };
     FlightsListService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

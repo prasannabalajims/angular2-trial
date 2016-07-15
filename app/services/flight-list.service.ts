@@ -8,4 +8,8 @@ export class FlightsListService {
     getFlightsList() {
         return Promise.resolve(FLIGHTS);
     }
+
+    getServiceProvidersList() {
+        return Promise.resolve(['British Airways', 'Fly Emirates', 'Lufthansa', 'Cathay Pacific']);
+    }
 }

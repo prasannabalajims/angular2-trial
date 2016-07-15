@@ -1,4 +1,5 @@
 import {Fare} from './fare'
+import {Model} from './model'
 
 export class Flight {
 
@@ -8,5 +9,6 @@ export class Flight {
     destinationCode: string;
     arrivalTime: string;
     departureTime: string;
-    ticketFare: Fare;
+    // ticketFare = new Fare();
+
 }
